@@ -12,12 +12,12 @@
     <artifactId>springboot-excel</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-excel</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Demo project for Spring Boot and excel</description>
 
     <properties>
         <java.version>1.8</java.version>
         <springfox.version>2.4.0</springfox.version>
-        <swagger-bootstrap-ui.version>1.8.8</swagger-bootstrap-ui.version>
+        <xlsx-streamer.version>2.1.0</xlsx-streamer.version>
     </properties>
 
     <dependencies>
@@ -31,6 +31,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--xlsx解析-->
+        <dependency>
+            <groupId>com.monitorjbl</groupId>
+            <artifactId>xlsx-streamer</artifactId>
+            <version>${xlsx-streamer.version}</version>
+        </dependency>
+        <!--swagger-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -40,11 +47,6 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${springfox.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>swagger-bootstrap-ui</artifactId>
-            <version>${swagger-bootstrap-ui.version}</version>
         </dependency>
     </dependencies>
 
