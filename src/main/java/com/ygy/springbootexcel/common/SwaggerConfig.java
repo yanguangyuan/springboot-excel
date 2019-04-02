@@ -28,8 +28,6 @@ import java.util.List;
 @EnableSwagger2
 @ComponentScan(basePackages="com.ygy.springbootexcel.controller")
 public class SwaggerConfig {
-    @Value("${swagger.basePackage}")
-    private String basePackage;
 
     @Bean
     public Docket api(){
